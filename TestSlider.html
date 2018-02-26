@@ -6,10 +6,10 @@
 </head>
 <body style="margin: 0px;">
     <div style="height: 120vh;background-color: aquamarine;" id="div1">
-        <h1 id="scrgiu">Scrolla Giu</h1>
+        <h1 id="scrgiu"style="margin: 0px;">Scrolla Giu</h1>
     </div>
     <div style="height: 120vh;background-color:red;" id="div2">
-        <h1 id="scrsu">Scrolla Su</h1>
+        <h1 id="scrsu" style="margin: 0px;">Scrolla Su</h1>
     </div>
     <script src="JS/jquery-3.3.1.js"></script>
     <script>
@@ -24,6 +24,9 @@
             $('html, body').stop().animate({
                 scrollTop: target.offset().top
             }, 1000);
+        });
+        $('body').bind("mousewheel", function() {
+            return false;
         });
     </script>
 </body>
