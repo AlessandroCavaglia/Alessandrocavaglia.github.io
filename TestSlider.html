@@ -4,20 +4,26 @@
     <meta charset="UTF-8">
     <title>TestSlider</title>
     <link rel="stylesheet" href="CSS/Style.css">
-
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 </head>
 <body style="margin: 0px;overflow-y:hidden">
-    <div id="drag" style="width: 50px;height: 50px;position: fixed;z-index:1;background-color: #000">
-        <h1 style="color:#fff">A</h1>
-    </div>
-    <div style="height: 100vh;background-color: aquamarine;" id="div1">
-        <h1 id="scrgiu"style="margin: 0px;">Scrolla Giu</h1>
+    <div class="div1" id="div1">
+        <div class="div1Container">
+        <p class="BigText Toggle" id="welcome">Welcome</p>
+        <p class="SmallText div1Little Toggle" id="welcome2">I'm Alessandro Cavaglia' and this is my website</p>
+        </div>
+        <div class="div1NavigatorContainer " id="div1Navigator">
+            <div id="scrgiu" class="div1Navigator">
+                <i  class="fas fa-arrow-circle-down MediumText"></i>
+            </div>
+        </div>
+
     </div>
     <div class="div2" id="div2">
         <div class="holder">
             <div class="lilslide" style="background-color: yellow">
                 <h1 id="scrsu"style="margin: 0px;">Scrolla Su</h1>
-
                 <h1 id="1">Slide2</h1>
             </div>
             <div class="lilslide" style="background-color: blue">
@@ -46,11 +52,13 @@
 
             </div>
         </div>
-
     </div>
     <div id="test" style="display: none"></div>
     <script src="JS/jquery-3.3.1.js"></script>
     <script>
+
+        $('#welcome').fadeIn("slow");
+        $('#welcome2').fadeIn("slow");
         $('#test').css("width","100vw");
         var width=$('#test').width();
         $('#scrgiu').on('click', function(event) {

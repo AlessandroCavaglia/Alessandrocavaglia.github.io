@@ -1,9 +1,58 @@
+.div1{
+    height: 100vh;
+    background-color: #3D5AFE;
+}
+.div1Container{
+    padding-top: 15%;
+    padding-left: 8%;
+}
+.div1Little{
+    padding-left: 5%;
+}
+.div1NavigatorContainer{
+    width: 100%;
+    text-align: center;
+}
+.div1Navigator{
+    padding-top: 15%;
+}
+.div1Navigator :hover{
+    cursor: pointer;
+    padding-top: 0.5%;
+}
 .div2{
     height: 100vh;
     background-color: red;
     overflow-x: hidden;
 
 }
+.SmallText{
+    margin: 0px;
+    font-family: 'Varela Round', Adobe Blank;
+    color:#fff;
+    font-size: 250%;
+}
+.MediumText{
+    font-size: 500%;
+    margin: 0px;
+    font-family: 'Varela Round', Adobe Blank;
+    color:#fff;
+}
+.BigText{
+    margin: 0px;
+    font-family: 'Varela Round', Adobe Blank;
+    color:#fff;
+    font-size: 1500%;
+}
+.Toggle{
+    display: none;
+}
+
+
+
+
+
+
 .lilslide
 {
     float: left;
