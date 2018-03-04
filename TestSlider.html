@@ -87,18 +87,22 @@
     <div id="test" style="display: none"></div>
     <script src="JS/jquery-3.3.1.js"></script>
     <script>
-        window.onresize = function(event) {
-            var url=document.URL;
-            var parts=url.split('#');
-            var targets=parts[1];
-            if(targets!=undefined)
-            {
-                var target=$('#'+targets);
-                $('html, body').stop().animate({
-                    scrollTop: target.offset().top
-                }, 1000);
+        var width = $(window).width();
+        $(window).on('resize', function(){
+            if($(this).width() != width){
+                width = $(this).width();
+                var url=document.URL;
+                var parts=url.split('#');
+                var targets=parts[1];
+                if(targets!=undefined)
+                {
+                    var target=$('#'+targets);
+                    $('html, body').stop().animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                }
             }
-        };
+        });
         //Getting screen width
         $('#test').css("width","100vw");
         var width=$('#test').width();
@@ -117,8 +121,6 @@
                 scrollTop: target.offset().top
             }, 1000);
         }
-
-
         //Listener on the  button
             $('#scr2').on('click', function(event) {
                 var target=$('#div2');
@@ -126,7 +128,6 @@
                     scrollTop: target.offset().top
                 }, 1000);
             });
-
             $('#scr22').on('click', function(event) {
                 var target=$('#div2');
                 $('html, body').stop().animate({
