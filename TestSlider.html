@@ -87,7 +87,9 @@
     <div id="test" style="display: none"></div>
     <script src="JS/jquery-3.3.1.js"></script>
     <script>
-
+        document.addEventListener('touchmove', function (event) {
+            if (event.scale !== 1) { event.preventDefault(); }
+        }, false);
         window.onresize = function(event) {
             var url=document.URL;
             var parts=url.split('#');
