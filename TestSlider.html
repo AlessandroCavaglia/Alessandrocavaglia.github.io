@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no ,user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no ">
     <meta charset="UTF-8">
     <title>TestSlider</title>
     <link rel="stylesheet" href="CSS/Style.css">
     <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 </head>
-<body style="margin: 0px;overflow:hidden">
+<body style="width:100%;margin: 0px;overflow:hidden">
     <div class="div1" id="div1">
         <div class="div1Container">
         <p class="div1BigText Toggle" id="welcome"><b class="Amber">W</b>elcome</p>
@@ -50,7 +50,7 @@
             </div>
         </div>
     </div>
-    <div class="div3" id="div3">
+    <!--<div class="div3" id="div3">
         <div class="holder">
             <div class="lilslide">
 
@@ -67,7 +67,7 @@
                 <h1 id="scrgg">scrolla giu giu</h1>
             </div>
         </div>
-    </div>
+    </div>1-->
     <div style="height: 100vh;width: 100%" id="div4">
         <div class="curtain_wrapper">
             <div class="curtain__panel curtain__panel--left" id="left">
@@ -87,9 +87,6 @@
     <div id="test" style="display: none"></div>
     <script src="JS/jquery-3.3.1.js"></script>
     <script>
-        document.addEventListener('touchmove', function (event) {
-            if (event.scale !== 1) { event.preventDefault(); }
-        }, false);
         window.onresize = function(event) {
             var url=document.URL;
             var parts=url.split('#');
@@ -137,7 +134,7 @@
                 }, 1000);
             });
             $('#scr3').on('click', function(event) {
-                var target=$('#div3');
+                var target=$('#div4');
                 $('html, body').stop().animate({
                     scrollTop: target.offset().top
                 }, 1000);
