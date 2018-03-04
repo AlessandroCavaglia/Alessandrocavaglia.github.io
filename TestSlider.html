@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta charset="UTF-8">
     <title>TestSlider</title>
     <link rel="stylesheet" href="CSS/Style.css">
@@ -10,21 +11,51 @@
 <body style="margin: 0px;overflow-y:hidden">
     <div class="div1" id="div1">
         <div class="div1Container">
-        <p class="BigText Toggle" id="welcome">Welcome</p>
-        <p class="SmallText div1Little Toggle" id="welcome2">I'm Alessandro Cavaglia' and this is my website</p>
+        <p class="div1BigText Toggle" id="welcome"><b class="Amber">W</b>elcome</p>
+            <p class="div1SmallText div1Little Toggle" id="welcome2">I'm <b class="Amber">Alessandro Cavaglià</b>,I'm an italian student in ict technology at "ITIS Alessandro Artom" in Asti</p>
+            <p class="div1SmallText div1Little Toggle" id="welcome3">In my leisure I'm a <b class="Amber">Developer</b> and I enjoy learning by getting involved in new projects.</p>
         </div>
-        <div class="div1NavigatorContainer " id="div1Navigator">
-            <div id="scrgiu" class="div1Navigator">
-                <i  class="fas fa-arrow-circle-down MediumText"></i>
+        <div class="div1NavigatorContainer " >
+            <div class="div1Navigator">
+                <a id="scr2" href="#div2">
+                    <i  class="fas fa-arrow-circle-down div1MediumText"></i>
+                </a>
             </div>
         </div>
 
     </div>
     <div class="div2" id="div2">
+        <div class="div2Container">
+            <div class="div2AboutContainer">
+                 <p class="div2BigText"><b class="Amber">A</b>bout <b class="Amber">M</b>e</p>
+            </div>
+            <div class="div2TextContainer">
+                <div class="div2ImageContainer">
+                    <div class="div2Image"></div>
+                </div>
+                    <div class="div2DescContainer">
+                        <p class="div2MediumText">My name is <b class="Amber">Alessandro Cavaglià.</b></p>
+                        <p class="div2MediumText">I was born in 1999 in Turin,Italy.</p>
+                        <p class="div2MediumText">I'm a senior at  <b class="Amber">Industrial Technical Institute "Alessandro Artom"</b> in Asti.</p>
+                        <p class="div2MediumText">I'm going to go to the <b class="Amber">University of Computer Science</b> to improve my knowledge and study Artificial Intelligence.</p>
+                        <p class="div2MediumText">I enjoy making <b class="Amber">websites</b> and <b class="Amber">developing programs</b> that can make  life simpler because i think this is the real progress' aim.</p>
+                    </div>
+            </div>
+            <div class="div2NavigatorContainer " >
+                <div class="div2Navigator">
+                    <a id="scr3" href="#div2">
+                        <i  class="fas fa-arrow-circle-down div1MediumText"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="div2" id="div3">
         <div class="holder">
-            <div class="lilslide" style="background-color: yellow">
-                <h1 id="scrsu"style="margin: 0px;">Scrolla Su</h1>
+            <div class="lilslide">
+
                 <h1 id="1">Slide2</h1>
+                <a href="#div2"id="scr22">su</a>
             </div>
             <div class="lilslide" style="background-color: blue">
                 <h1 style="margin: 0px;">Bau</h1>
@@ -37,7 +68,7 @@
             </div>
         </div>
     </div>
-    <div style="height: 100vh;width: 100%" id="div3">
+    <div style="height: 100vh;width: 100%" id="div4">
         <div class="curtain_wrapper">
             <div class="curtain__panel curtain__panel--left" id="left">
                 <h1 id="scrmedio"style="margin: 0px;">Scrolla Su</h1>
@@ -56,17 +87,50 @@
     <div id="test" style="display: none"></div>
     <script src="JS/jquery-3.3.1.js"></script>
     <script>
-
-        $('#welcome').fadeIn("slow");
-        $('#welcome2').fadeIn("slow");
-        $('#test').css("width","100vw");
-        var width=$('#test').width();
-        $('#scrgiu').on('click', function(event) {
-            var target=$('#div2');
+        //On screen resize
+        window.onresize = function(event) {
+            var url=document.URL;
+            var parts=url.split('#');
+            var targets=parts[1];
+            var target=$('#'+targets);
             $('html, body').stop().animate({
                 scrollTop: target.offset().top
             }, 1000);
-        });
+        };
+        //Getting screen width
+        $('#test').css("width","100vw");
+        var width=$('#test').width();
+        //Element display
+            $('#welcome').fadeIn(1200);
+            $('#welcome2').fadeIn(1200);
+            $('#welcome3').fadeIn(1200);
+        var url=document.URL;
+        var parts=url.split('#');
+        var targets=parts[1];
+        var target=$('#'+targets);
+        $('html, body').stop().animate({
+            scrollTop: target.offset().top
+        }, 1000);
+        //Listener on the  button
+            $('#scr2').on('click', function(event) {
+                var target=$('#div2');
+                $('html, body').stop().animate({
+                    scrollTop: target.offset().top
+                }, 1000);
+            });
+
+            $('#scr22').on('click', function(event) {
+                var target=$('#div2');
+                $('html, body').stop().animate({
+                    scrollTop: target.offset().top
+                }, 1000);
+            });
+            $('#scr3').on('click', function(event) {
+                var target=$('#div3');
+                $('html, body').stop().animate({
+                    scrollTop: target.offset().top
+                }, 1000);
+            });
         $('#open').on('click', function(event) {
             $('#left').css("transform","translateX(-120%)");
             $('#right').css("transform","translateX(120%)");
@@ -75,12 +139,7 @@
             $('#left').css("transform","translateX(0)");
             $('#right').css("transform","translateX(0)");
         });
-        $('#scrsu').on('click', function(event) {
-            var target=$('#div1');
-            $('html, body').stop().animate({
-                scrollTop: target.offset().top
-            }, 1000);
-        });
+
         $('#scrgg').on('click', function(event) {
             var target=$('#div3');
             $('html, body').stop().animate({
