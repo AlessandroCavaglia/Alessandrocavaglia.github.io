@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no ">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta charset="UTF-8">
     <title>TestSlider</title>
     <link rel="stylesheet" href="CSS/Style.css">
@@ -26,7 +26,7 @@
     </div>
     <div class="div2" id="div2">
         <div class="div2Container">
-            <div class="div2AboutContainer">
+            <div class="div2AboutContainer" id="about">
                  <p class="div2BigText"><b class="Amber">A</b>bout <b class="Amber">M</b>e</p>
             </div>
             <div class="div2TextContainer">
@@ -43,7 +43,7 @@
             </div>
             <div class="div2NavigatorContainer " >
                 <div class="div2Navigator">
-                    <a id="scr3" href="#div2">
+                    <a id="scr3" href="#div3">
                         <i  class="fas fa-arrow-circle-down div1MediumText"></i>
                     </a>
                 </div>
@@ -68,18 +68,17 @@
             </div>
         </div>
     </div>1-->
-    <div style="height: 100vh;width: 100%" id="div4">
+    <div style="height: 100vh;width: 100%" id="div3">
         <div class="curtain_wrapper">
-            <div class="curtain__panel curtain__panel--left" id="left">
+            <div class="div3curtain curtain__panel--left" id="left">
                 <h1 id="scrmedio"style="margin: 0px;">Scrolla Su</h1>
                 <h3 id="open">Apri</h3>
-            </div> <!-- curtain__panel -->
+            </div>
             <!-- The prize behind the curtain panels -->
             <div class="curtain__prize">
                 <h4 id="close">Chiudi</h4>
-            </div> <!-- curtain__prize -->
-            <!-- The right curtain panel -->
-            <div class="curtain__panel curtain__panel--right" id="right">
+            </div>
+            <div class="div3curtain curtain__panel--right" id="right">
 
             </div>
         </div>
@@ -110,7 +109,6 @@
             $('#welcome').fadeIn(1200);
             $('#welcome2').fadeIn(1200);
             $('#welcome3').fadeIn(1200);
-
         var url=document.URL;
         var parts=url.split('#');
         var targets=parts[1];
@@ -135,7 +133,7 @@
                 }, 1000);
             });
             $('#scr3').on('click', function(event) {
-                var target=$('#div4');
+                var target=$('#div3');
                 $('html, body').stop().animate({
                     scrollTop: target.offset().top
                 }, 1000);
@@ -179,9 +177,9 @@
                 scrollLeft: 2*width
             },800);
         });
-        $('body').bind("mousewheel", function() {
+        /*$('body').bind("mousewheel", function() {
             return false;
-        });
+        });*/
     </script>
 </body>
 </html>
