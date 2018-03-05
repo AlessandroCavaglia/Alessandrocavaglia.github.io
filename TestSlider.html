@@ -68,18 +68,30 @@
             </div>
         </div>
     </div>1-->
-    <div style="height: 100vh;width: 100%" id="div3">
+    <div  class="div3" id="div3">
         <div class="curtain_wrapper">
-            <div class="div3curtain curtain__panel--left" id="left">
-                <h1 id="scrmedio"style="margin: 0px;">Scrolla Su</h1>
+            <div class="div3Curtain curtain__panel--left" id="left">
                 <h3 id="open">Apri</h3>
+                <div class="div3NavigatorContainer " >
+                    <div class="div3Navigatorl">
+                        <a id="scr222" href="#div3">
+                            <i class="fas fa-arrow-circle-up div1MediumText"></i>
+                        </a>
+                    </div>
+                </div>
             </div>
             <!-- The prize behind the curtain panels -->
-            <div class="curtain__prize">
+            <div class="div3Curtain__prize">
                 <h4 id="close">Chiudi</h4>
             </div>
-            <div class="div3curtain curtain__panel--right" id="right">
-
+            <div class="div3Curtain curtain__panel--right" id="right">
+                <div class="div3NavigatorContainer">
+                    <div class="div3Navigatorr">
+                        <a id="scr4" href="#div3">
+                            <i  class="fas fa-arrow-circle-down div1MediumText"></i>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -132,12 +144,24 @@
                     scrollTop: target.offset().top
                 }, 1000);
             });
+        $('#scr222').on('click', function(event) {
+            var target=$('#div2');
+            $('html, body').stop().animate({
+                scrollTop: target.offset().top
+            }, 1000);
+        });
             $('#scr3').on('click', function(event) {
                 var target=$('#div3');
                 $('html, body').stop().animate({
                     scrollTop: target.offset().top
                 }, 1000);
             });
+        $('#scr4').on('click', function(event) {
+            var target=$('#div4');
+            $('html, body').stop().animate({
+                scrollTop: target.offset().top
+            }, 1000);
+        });
         $('#open').on('click', function(event) {
             $('#left').css("transform","translateX(-120%)");
             $('#right').css("transform","translateX(120%)");
