@@ -2,7 +2,7 @@
 .div1{
     height: 100vh;
     background-color: #3D5AFE;
-    overflow-x: hidden;
+    overflow-y: scroll;
 }
 .div1Container{
     padding-top: 15%;
@@ -44,7 +44,7 @@
 .div2{
     height: 100vh;
     background-color: #283593;
-    overflow-x: hidden;
+    overflow-y: scroll;
 }
 .div2Container{
     padding: 5%;
