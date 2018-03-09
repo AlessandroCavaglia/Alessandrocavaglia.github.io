@@ -91,6 +91,10 @@
             <!-- The prize behind the curtain panels -->
             <div class="div3Curtain__prize">
                 <h4 id="close">Chiudi</h4>
+                <h1 class="Toggle" id="web">Web</h1>
+                <h1 class="Toggle" id="net">Net</h1>
+                <h1 class="Toggle" id="dev">Dev</h1>
+                <h1 class="Toggle" id="gen">Gen</h1>
             </div>
             <div class="div3Curtain curtain__panel--right" id="right">
                     <div class="div3Navigatorr">
@@ -182,22 +186,30 @@
         $('#openGen').on('click', function(event) {
             $('#left').css("transform","translateX(-120%)");
             $('#right').css("transform","translateX(120%)");
+            $('#gen').fadeIn();
         });
         $('#openDev').on('click', function(event) {
             $('#left').css("transform","translateX(-120%)");
             $('#right').css("transform","translateX(120%)");
+            $('#dev').fadeIn();
         });
         $('#openNet').on('click', function(event) {
             $('#left').css("transform","translateX(-120%)");
             $('#right').css("transform","translateX(120%)");
+            $('#net').fadeIn();
         });
         $('#openWeb').on('click', function(event) {
             $('#left').css("transform","translateX(-120%)");
             $('#right').css("transform","translateX(120%)");
+            $('#web').fadeIn();
         });
         $('#close').on('click', function(event) {
             $('#left').css("transform","translateX(0)");
             $('#right').css("transform","translateX(0)");
+            $('#gen').fadeOut();
+            $('#dev').fadeOut();
+            $('#net').fadeOut();
+            $('#web').fadeOut();
         });
 
         $('#scrgg').on('click', function(event) {
