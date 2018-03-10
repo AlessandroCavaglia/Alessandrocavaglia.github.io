@@ -166,14 +166,22 @@
     font-size:600% ;
     text-shadow: 2px 2px 2px #000;
 }
-
+.div3Icon:hover{
+    cursor: pointer;
+}
 .div3IconText{
     color: #fff;
     font-size:250% ;
     font-family: 'Varela Round', Adobe Blank;
     text-shadow: 2px 2px 2px #000;
 }
-
+.div3IconText:hover{
+    cursor: pointer;
+}
+.prize{
+    width: 100%;
+    text-align: center;
+}
 .div3SecondIcon{
 
 }
@@ -191,6 +199,18 @@
     padding-top: 15%;
     padding-bottom: 20%;
 
+}
+.div3SkillTitle{
+    color: #fff;
+    font-size:850% ;
+    font-family: 'Varela Round', Adobe Blank;
+    margin: 0px;
+    margin-bottom: 2%;
+}
+.div3WebSkill{
+    color: #fff;
+    font-size:300% ;
+    font-family: 'Varela Round', Adobe Blank;
 }
 
 
