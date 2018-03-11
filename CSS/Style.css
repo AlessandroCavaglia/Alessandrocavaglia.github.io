@@ -160,6 +160,7 @@
     z-index: 1; /* Places the prize behind the panels, which are z-index 2 */
     width: 99%;
     height: 100vh;
+    text-align: center;
 }
 .div3Icon{
     color: #fff;
@@ -263,6 +264,12 @@
     .div3IconText{
         font-size: 150%;
     }
+    .div3SkillTitle{
+        font-size: 400%
+    }
+    .div3WebSkill{
+        font-size: 150%;
+    }
 }
 /*Tablet*/
 @media only screen and (min-width : 10px) and (max-width : 650px) and (min-height: 1000px){
@@ -353,6 +360,12 @@
     }
     .div3IconText{
         font-size: 200%;
+    }
+    .div3SkillTitle{
+        font-size: 700%
+    }
+    .div3WebSkill{
+        font-size: 250%;
     }
 }
 /*Medium pc*/

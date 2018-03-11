@@ -90,6 +90,7 @@
             </div>
             <!-- The prize behind the curtain panels -->
             <div class="div3Curtain__prize">
+
                 <div class="Toggle prize" id="web">
                     <p class="div3SkillTitle"><b class="Amber">W</b>eb <b class="Amber">K</b>nowledge</p>
                     <p class="div3WebSkill">-Html   <i class="fab fa-html5"></i> - CSS <i class="fab fa-css3-alt"></i></p>
@@ -104,25 +105,30 @@
                 <div class="Toggle prize" id="net">Net</div>
                 <div class="Toggle prize" id="dev">Dev</div>
                 <div class="Toggle prize" id="gen">Gen</div>
-                <h4 id="close">Chiudi</h4>
-            </div>
-            <div class="div3Curtain curtain__panel--right" id="right">
-                    <div class="div3Navigatorr">
-                        <a id="scr4" href="#div3">
-                            <i  class="fas fa-arrow-circle-down div1MediumText"></i>
-                        </a>
-                    </div>
-                <div class="div3RightContent">
-                    <p class="div3Myskills" style="text-align: left">kills</p>
-                    <div class="center div3FirstIcon" style="padding-top: 5%;" id="openDev">
-                        <a><i class="fas fa-code div3Icon "></i></a><br>
-                        <a class="div3IconText">Developing skills</a>
-                    </div>
-                    <div class="center div3SecondIcon div3FirstIcon" id="openGen">
-                        <a><i class="far fa-clipboard div3Icon"></i></i></i></a><br>
-                        <a class="div3IconText">General skills and certifications</a>
-                    </div>
+                <a id="close">
+                <i class="fas fa-undo-alt div3Icon"  style="padding-top: 3%"></i>
+                </a>
                 </div>
+
+            <div class="div3Curtain curtain__panel--right" id="right">
+
+                        <div class="div3Navigatorr">
+                            <a id="scr4" href="#div3">
+                                <i  class="fas fa-arrow-circle-down div1MediumText"></i>
+                            </a>
+                        </div>
+                    <div class="div3RightContent">
+                        <p class="div3Myskills" style="text-align: left">kills</p>
+                        <div class="center div3FirstIcon" style="padding-top: 5%;" id="openDev">
+                            <a><i class="fas fa-code div3Icon "></i></a><br>
+                            <a class="div3IconText">Developing skills</a>
+                        </div>
+                        <div class="center div3SecondIcon div3FirstIcon" id="openGen">
+                            <a><i class="far fa-clipboard div3Icon"></i></i></i></a><br>
+                            <a class="div3IconText">General skills and certifications</a>
+                        </div>
+                    </div>
+
             </div>
 
     </div>
@@ -212,14 +218,28 @@
             $('#left').css("transform","translateX(-120%)");
             $('#right').css("transform","translateX(120%)");
             $('#web').fadeIn();
+            $('#close').fadeIn();
         });
         $('#close').on('click', function(event) {
-            $('#left').css("transform","translateX(0)");
-            $('#right').css("transform","translateX(0)");
-            $('#gen').fadeOut();
-            $('#dev').fadeOut();
-            $('#net').fadeOut();
-            $('#web').fadeOut();
+            var url=document.URL;
+            var parts=url.split('#');
+            var targets=parts[1];
+            if(targets!=undefined)
+            {
+                var target=$('#'+targets);
+                $('html, body').stop().animate({
+                    scrollTop: target.offset().top
+                }, 10,"swing",function () {
+                    $('#left').css("transform","translateX(0)");
+                    $('#right').css("transform","translateX(0)");
+                    $('#gen').fadeOut();
+                    $('#dev').fadeOut();
+                    $('#net').fadeOut();
+                    $('#web').fadeOut();
+                    $('#close').fadeOut();
+                });
+            }
+
         });
 
         $('#scrgg').on('click', function(event) {
