@@ -88,7 +88,7 @@
                     </div>
                 </div>
             </div>
-            <!-- The prize behind the curtain panels -->
+
             <div class="div3Curtain__prize">
 
                 <div class="Toggle prize" id="web">
@@ -100,10 +100,24 @@
                     <a class="div3WebSkill"> Framewroks:</a><br>
                     <a class="div3WebSkill"> - Bootstrap</a><br>
                     <a class="div3WebSkill">- Jquery</a>
-
                 </div>
-                <div class="Toggle prize" id="net">Net</div>
-                <div class="Toggle prize" id="dev">Dev</div>
+                <div class="Toggle prize" id="net">
+                    <p class="div3SkillTitle"><b class="Amber">N</b>et <b class="Amber">K</b>nowledges</p>
+                    <p class="div3WebSkill">- Lan networking <i class="fas fa-sitemap"></i></p>
+                    <p class="div3WebSkill">- Virtual Lan networking</p>
+                    <p class="div3WebSkill">- Virtual private networks VPN</p>
+                    <p class="div3WebSkill">- Wirless networking</p>
+                    <p class="div3WebSkill">- Firewalls  knowledges </p>
+                </div>
+                <div class="Toggle prize" id="dev">
+                    <p class="div3SkillTitle"><b class="Amber">D</b>ev <b class="Amber">K</b>nowledges</p>
+                    <p class="div3WebSkill">- C++ Language</p>
+                    <p class="div3WebSkill">- C# Language</p>
+                    <p class="div3WebSkill">- Java Language</p>
+                    <p class="div3WebSkill">- Arduino Sketches</p>
+                    <p class="div3WebSkill">- Unity engine knowledges</p>
+                    <p class="div3WebSkill">- Visual Basic whit integrations whit the Microsoft office Package</p>
+                </div>
                 <div class="Toggle prize" id="gen">Gen</div>
                 <a id="close">
                 <i class="fas fa-undo-alt div3Icon"  style="padding-top: 3%"></i>
@@ -111,7 +125,6 @@
                 </div>
 
             <div class="div3Curtain curtain__panel--right" id="right">
-
                         <div class="div3Navigatorr">
                             <a id="scr4" href="#div3">
                                 <i  class="fas fa-arrow-circle-down div1MediumText"></i>
@@ -128,7 +141,6 @@
                             <a class="div3IconText">General skills and certifications</a>
                         </div>
                     </div>
-
             </div>
 
     </div>
@@ -203,16 +215,19 @@
             $('#left').css("transform","translateX(-120%)");
             $('#right').css("transform","translateX(120%)");
             $('#gen').fadeIn();
+            $('#close').fadeIn();
         });
         $('#openDev').on('click', function(event) {
             $('#left').css("transform","translateX(-120%)");
             $('#right').css("transform","translateX(120%)");
             $('#dev').fadeIn();
+            $('#close').fadeIn();
         });
         $('#openNet').on('click', function(event) {
             $('#left').css("transform","translateX(-120%)");
             $('#right').css("transform","translateX(120%)");
             $('#net').fadeIn();
+            $('#close').fadeIn();
         });
         $('#openWeb').on('click', function(event) {
             $('#left').css("transform","translateX(-120%)");
