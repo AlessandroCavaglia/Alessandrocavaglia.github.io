@@ -270,6 +270,9 @@
     .div3WebSkill{
         font-size: 150%;
     }
+    .div3BackIcon{
+        padding-top: 1%;
+    }
 }
 /*Tablet*/
 @media only screen and (min-width : 10px) and (max-width : 650px) and (min-height: 1000px){
@@ -367,6 +370,9 @@
     .div3WebSkill{
         font-size: 250%;
     }
+    .div3BackIcon{
+        padding-top: 3%
+    }
 }
 /*Medium pc*/
 @media only screen and (min-width : 1050px) and (max-width : 1270px) {
@@ -399,6 +405,7 @@
     .div2DescContainer{
         padding-left: 375px;
     }
+
 }
 
 .Amber{
