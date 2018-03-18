@@ -453,6 +453,7 @@
     }
     .div3WebSkill{
         font-size: 250%;
+        margin: 3%;
     }
     .div3BackIcon{
         padding-top: 3%
@@ -495,6 +496,9 @@
     }
     .div2DescContainer{
         padding-left: 375px;
+    }
+    .div3WebSkill{
+        margin: 3%;
     }
 
 }
