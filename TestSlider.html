@@ -50,24 +50,7 @@
             </div>
         </div>
     </div>
-    <!--<div class="div3" id="div3">
-        <div class="holder">
-            <div class="lilslide">
 
-                <h1 id="1">Slide2</h1>
-                <a href="#div2"id="scr22">su</a>
-            </div>
-            <div class="lilslide" style="background-color: blue">
-                <h1 style="margin: 0px;">Bau</h1>
-                <h1 id="2">Slide3</h1>
-            </div>
-            <div class="lilslide" style="background-color: green">
-                <h1 style="margin: 0px;">lul</h1>
-                <h1 id="0">Slide1</h1>
-                <h1 id="scrgg">scrolla giu giu</h1>
-            </div>
-        </div>
-    </div>1-->
     <div  class="div3" id="div3">
 
             <div class="div3Curtain curtain__panel--left" id="left">
@@ -116,7 +99,7 @@
                     <p class="div3WebSkill">- Java Language</p>
                     <p class="div3WebSkill">- Arduino Sketches</p>
                     <p class="div3WebSkill">- Unity engine knowledges</p>
-                    <p class="div3WebSkill">- Visual Basic with integrations whit the Microsoft office Package</p>
+                    <p class="div3WebSkill">- Visual Basic</p>
                 </div>
                 <div class="Toggle prize" id="gen">
                     <p class="div3SkillTitle"><b class="Amber">G</b>eneral <b class="Amber">S</b>kills</p>
@@ -131,10 +114,9 @@
                 <i class="fas fa-undo-alt div3Icon div3BackIcon"></i>
                 </a>
                 </div>
-
             <div class="div3Curtain curtain__panel--right" id="right">
                         <div class="div3Navigatorr">
-                            <a id="scr4" href="#div3">
+                            <a id="scr4" href="#div4">
                                 <i  class="fas fa-arrow-circle-down div1MediumText"></i>
                             </a>
                         </div>
@@ -150,6 +132,49 @@
                         </div>
                     </div>
             </div>
+
+    </div>
+    <div class="div4" id="div4">
+        <p class="div2BigText" style="margin-top: 2%;margin-left: 5% "><b class="Amber">M</b>y <b class="Amber">p</b>ortfolio</p>
+
+        <div class="div4Mobile" id="mobile">
+
+        </div>
+        <div class="div4Websistes">
+            <div class="div4LinkContainer">
+            <p class="div4MediumText pointer" id="weblink1">AstimecSnc-</p>
+            <p class="div4MediumText pointer" id="weblink2">Dayliwallpapers-</p>
+            <p class="div4MediumText pointer" id="weblink3">Glisfondidiale-</p>
+            <p class="div4MediumText pointer" id="weblink4">Artom prototype-</p>
+            <p class="div4MediumText pointer" id="weblink5">Tigliole tourism-</p>
+            </div>
+            <div id="explain">
+                <h1 class="div4MediumText desc" id="web1">
+                    This website was restructured in the graphic design with the creation of a new content managment system to manage news and projects to publish on the website
+                </h1>
+                <h1 class="div4MediumText Toggle desc" id="web2">
+                    This website was created just for fun,it was a wallpapers website designed to show 10 different wallpapers for each category every day, so it looked like it was daily updated but it was made whit an algorythm
+                    that choose between the wallpapers uploaded from the back-end of the website
+                </h1>
+                <h1 class="div4MediumText Toggle desc" id="web3">
+                    This is my first designed website. It is a wallpapers website that i designed for a customer and it has a back-end to manage the categories the wallpapers upload, the keywords managment for each category
+                </h1>
+                <h1 class="div4MediumText Toggle desc" id="web4">
+                    This website was designed for a educational purpose.Me and Alberto Baroso, Alberto Campini, <a href="https://tuttarealstep.github.io" target="_blank" style="color: white;">Stefano Valenzano</a>, Filippo Costa.It was designed to replace the actual website of our school, it was later discarded and replaced whit a website created in wordpress, what a shame
+                </h1>
+                <h1 class="div4MediumText Toggle desc" id="web5">
+                    This website was designed for a educational purpose.Me and <a href="https://tuttarealstep.github.io" target="_blank" style="color: white;">Stefano Valenzano</a> designed this website for the Tigliole town. We designed the graphic and used <a href="https://tuttarealstep.github.io/MyCMS/" target="_blank" style="color: white;">MYcms</a> for the content managment.
+                </h1>
+                <div class="div2Navigator" style="text-align: right">
+                    <a id="scr33" href="#div3">
+                        <i  class="fas fa-arrow-circle-up div1MediumText"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+
+        </div>
 
     </div>
     <div id="test" style="display: none"></div>
@@ -213,6 +238,12 @@
                     scrollTop: target.offset().top
                 }, 1000);
             });
+        $('#scr33').on('click', function(event) {
+            var target=$('#div3');
+            $('html, body').stop().animate({
+                scrollTop: target.offset().top
+            }, 1000);
+        });
         $('#scr4').on('click', function(event) {
             var target=$('#div4');
             $('html, body').stop().animate({
@@ -294,6 +325,66 @@
             target.animate({
                 scrollLeft: 2*width
             },800);
+        });
+        $('#weblink1').on('click', function(event) {
+            $('#web2').stop().fadeOut(400,function () {
+                $('#web3').stop().fadeOut(400,function () {
+                    $('#web4').stop().fadeOut(400,function () {
+                        $('#web5').stop().fadeOut(400,function () {
+                            $('#web1').stop().fadeIn();
+                            $('#mobile').css('background-image', 'url(IMG/Astimec.png)');
+                        });
+                    });
+                });
+            });
+        });
+        $('#weblink2').on('click', function(event) {
+            $('#web1').stop().fadeOut(400,function () {
+                $('#web3').stop().fadeOut(400,function () {
+                    $('#web4').stop().fadeOut(400,function () {
+                        $('#web5').stop().fadeOut(400,function () {
+                            $('#web2').stop().fadeIn();
+                            $('#mobile').css('background-image', 'url(IMG/Dailywallpapers.png)');
+                        });
+                    });
+                });
+            });
+        });
+        $('#weblink3').on('click', function(event) {
+            $('#web2').stop().fadeOut(400,function () {
+                $('#web1').stop().fadeOut(400,function () {
+                    $('#web4').stop().fadeOut(400,function () {
+                        $('#web5').stop().fadeOut(400,function () {
+                            $('#web3').stop().fadeIn();
+                            $('#mobile').css('background-image', 'url(IMG/Glisfondidiale.png)');
+                        });
+                    });
+                });
+            });
+        });
+        $('#weblink4').on('click', function(event) {
+            $('#web2').stop().fadeOut(400,function () {
+                $('#web3').stop().fadeOut(400,function () {
+                    $('#web1').stop().fadeOut(400,function () {
+                        $('#web5').stop().fadeOut(400,function () {
+                            $('#web4').stop().fadeIn();
+                            $('#mobile').css('background-image', 'url(IMG/Artom.png)');
+                        });
+                    });
+                });
+            });
+        });
+        $('#weblink5').on('click', function(event) {
+            $('#web2').stop().fadeOut(400,function () {
+                $('#web3').stop().fadeOut(400,function () {
+                    $('#web4').stop().fadeOut(400,function () {
+                        $('#web1').stop().fadeOut(400,function () {
+                            $('#web5').stop().fadeIn();
+                            $('#mobile').css('background-image', 'url(IMG/Tigliole.png)');
+                        });
+                    });
+                });
+            });
         });
     </script>
 </body>

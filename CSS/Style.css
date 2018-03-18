@@ -213,7 +213,58 @@
     font-size:300% ;
     font-family: 'Varela Round', Adobe Blank;
 }
-
+.div4{
+    height: 100vh;
+    width: 100%;
+    background-color:#1A237E ;
+    overflow-y: scroll;
+}
+.div4Mobile{
+    margin-left: 5%;
+    background-image: url("../IMG/Astimec.png");
+    background-size: cover;
+    width: 300px;
+    height: 600px;
+    float: left;
+    margin-right: 5%;
+    margin-top: 1%;
+    border: solid;
+    border-left-width: 10px;
+    border-right-width: 10px;
+    border-top-width: 23px;
+    border-bottom-width: 40px;
+    border-radius: 8% 8% 7% 7%;
+}
+.div4Websistes{
+    margin-top: 5%;
+    min-height: 700px;
+    text-align: right;
+    padding-right: 10%;
+}
+.div4LinkContainer{
+    margin-left: 70%;
+    border-bottom: solid;
+    border-width: 1px;
+    border-color: white;
+    padding: 1%;
+}
+.desc{
+    text-align: left;
+    padding-top: 2%;
+}
+.footer{
+    width:100%;
+    height: 100%;
+    min-height:25vh;
+    background-color: white;
+    margin-top: 5%;
+}
+.div4MediumText{
+    margin: 0px;
+    font-family: 'Varela Round', Adobe Blank;
+    color:#fff;
+    font-size: 220%;
+}
 
 /*Mobile Phone*/
 @media only screen and (min-width : 10px) and (max-width : 650px) and (max-height: 1000px){
@@ -314,9 +365,17 @@
     .div2NavigatorContainer{
         padding-top: 5%;
     }
+    .div4Mobile{
+        height: 500px;
+        width: 250px;
+    }
+    .div4MediumText{
+        font-size: 150%;
+    }
+
 }
 /*Small pc*/
-@media only screen and (min-width : 650px) and (max-width : 1050px) {
+@media only screen and (min-width : 650px) and (max-width : 1100px) {
 
     .div1SmallText{
         font-size: 250%!important;
@@ -373,9 +432,16 @@
     .div3BackIcon{
         padding-top: 3%
     }
+    .div4Mobile{
+        height: 500px;
+        width: 250px;
+    }
+    .div4MediumText{
+        font-size: 180%;
+    }
 }
 /*Medium pc*/
-@media only screen and (min-width : 1050px) and (max-width : 1270px) {
+@media only screen and (min-width : 1100px) and (max-width : 1200px) {
     .div1SmallText{
 
         font-size: 200%!important;
@@ -417,7 +483,9 @@
 
 
 
-
+.pointer:hover{
+    cursor: pointer;
+}
 
 .center{
     text-align: center;
