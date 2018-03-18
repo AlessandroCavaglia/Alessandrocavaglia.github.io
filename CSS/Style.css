@@ -316,10 +316,11 @@
         font-size: 150%;
     }
     .div3SkillTitle{
-        font-size: 150%
+        font-size: 350%
     }
     .div3WebSkill{
         font-size: 150%;
+        margin: 3%;
     }
     .div3BackIcon{
         padding-top: 1%;
@@ -366,7 +367,10 @@
         padding-top: 5%;
     }
     .div3SkillTitle{
-        font-size: 150%
+        font-size: 350%
+    }
+    .div3WebSkill{
+        margin: 3%;
     }
     .div4Mobile{
         height: 500px;
