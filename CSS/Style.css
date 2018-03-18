@@ -325,6 +325,12 @@
     .div3BackIcon{
         padding-top: 1%;
     }
+    .div4LinkContainer{
+        margin-left: 0;
+    }
+    .div4Websistes{
+        margin-left: 2%;
+    }
 }
 /*Tablet*/
 @media only screen and (min-width : 10px) and (max-width : 650px) and (min-height: 1000px){
@@ -378,6 +384,12 @@
     }
     .div4MediumText{
         font-size: 150%;
+    }
+    .div4LinkContainer{
+        margin-left: 0;
+    }
+    .div4Websistes{
+        margin-left: 2%;
     }
 
 }
