@@ -365,6 +365,9 @@
     .div2NavigatorContainer{
         padding-top: 5%;
     }
+    .div3SkillTitle{
+        font-size: 150%
+    }
     .div4Mobile{
         height: 500px;
         width: 250px;
