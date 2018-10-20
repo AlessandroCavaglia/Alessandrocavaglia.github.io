@@ -1,10 +1,4 @@
-.div1 {
-    position: relative;
-    height: 300px;
-    background-image: linear-gradient(#191a1d, #191a1d);
-    height: 50vh;
-    padding: 0px;
-}
+/*Navbar Style*/
 .brand{
     height: 100%;
 }
@@ -26,8 +20,17 @@
 .navbar-right{
     margin-right: 10%;
 }
+@media screen and (max-width: 765px){
+    .navbar-right{
+        margin-right: 0;
+        margin-bottom: 0;
+    }
+    .navbar-li{
+        margin:0 !important;
+    }
+}
 .icon-bar {
-    background-color: #000; /* Changes regular toggle color */
+    background-color: #000;
 }
 .navbar-toggle{
     min-height: 50px;
@@ -47,16 +50,77 @@
     margin-left: 10px;
     text-align: center;
 }
-.navbar-a{
+.navbar-a {
     min-height: 70px;
     line-height: 70px !important;
     padding-top: 0px !important;
     padding-bottom: 0px !important;
+    font-size: 18px;
+    color:#000;
+}
+.navbar-a:after{
+    content: '';
+    position: absolute;
+    border-bottom: 2px solid #000;
+    bottom: 0;
+    left: 0;
+    right: 100%;
+    transition: all 500ms;
+}
+.navbar-a:hover:after{
+   right:0;
 }
 
 
+.navbar-a:hover{
+    color:#191919;
+}
+.navbar{
+    border-bottom-width: 1px;
+    border-color: black;
+}
+.navbar-collapse{
+    padding: 0;
+}
+body {
+    padding-top: 70px;               /*Body top padding for the sliding topbar*/
+    font-family: 'Nanum Gothic', sans-serif;
+}
 
-body { padding-top: 70px; }
+/*End of the navbar style*/
+
+
+
+.div1 {
+    position: relative;
+    background-image: linear-gradient(#191a1d, #191a1d);
+    height: 85vh;
+    padding: 0;
+}
+.div1Text{
+    text-align: center;
+    padding-top: 15%;
+}
+.div1BigText
+{
+    color:#fff;
+    font-size: 75px;
+}
+.div1NormalText{
+    color:#fff;
+    font-size: 45px;
+}
+@media screen and (max-width: 765px){
+    .div1{
+        box-shadow: 0 4px 30px -2px gray;
+    }
+    .div1BigText{
+        font-size: 50px;
+    }
+    .div1NormalText{
+        font-size: 30px;
+    }
+}
 
 svg {
     position: absolute;
