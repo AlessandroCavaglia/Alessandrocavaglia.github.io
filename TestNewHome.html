@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="IMG/Logo.png">
+    <link rel="stylesheet" href="JS/Bootstrap/css/bootstrap.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="UTF-8">
+    <title>AlessandroCavaglià</title>
+    <script src="JS/jquery-3.3.1.min.js"></script>
+    <script src="JS/Bootstrap/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="CSS/Style2.css">
+</head>
+<body>
+<nav class="navbar Topbar navbar-expand-lg navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">
+                <img alt="Alessandro Cavaglià" class="brand" src="IMG/Logo.png">
+            </a>
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse" id="navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="navbar-li"><a href="#" class="navbar-a">Bio</a></li>
+                <li class="navbar-li"><a href="#" class="navbar-a">Skills</a></li>
+                <li class="navbar-li"><a href="#" class="navbar-a">Portfolio</a></li>
+                <li class="navbar-li"><a href="#" class="navbar-a">Contacts</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+</nav>
+<div class="container-fluid" style="padding: 0px;">
+    <div class="col-xs-12 div1">
+        <h1>Header Content</h1>
+        <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 186 1900 113" id="BigSVG" style="display: none">
+            <polygon fill="white" points="0,300 542.167,210.5 1212.5,300 1920,198.5 1920,300"  ></polygon>
+        </svg>
+    </div>
+
+    <div class="col-xs-12 div2" >
+        <h1>Section Content</h1>
+        <br>
+        <br>
+        <br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    </div>
+</div>
+</body>
+</html>
+
+<script>
+    if (window.innerWidth<=800)
+    {
+        $('#BigSVG').hide();
+    }
+    else
+    {
+        $('#BigSVG').removeAttr("style");
+    }
+    window.onresize = function(event) {
+        if (window.innerWidth<=800)
+        {
+            $('#BigSVG').hide();
+        }
+        else
+        {
+            $('#BigSVG').removeAttr("style");
+        }
+    };
+</script>

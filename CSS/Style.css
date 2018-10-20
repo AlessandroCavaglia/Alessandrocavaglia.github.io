@@ -527,3 +527,38 @@
     overflow-y:hidden;
 }
 
+
+
+.project{
+    width: 30%;
+    background-color: #1A237E;
+    height: 40%;
+    display: inline-table;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    border-radius: 2%;
+    text-align: center;
+    -webkit-box-shadow: 0px 0px 80px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 80px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 80px 0px rgba(0,0,0,0.75);
+}
+.projectTitle{
+    color: white;
+    text-align: center;
+    margin-top: 1%;
+}
+.projectImage{
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    margin-top: 1%;
+}
+@media only screen and (min-width : 0px) and (max-width : 750px) {
+    .project{
+        width: 80%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
