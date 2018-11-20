@@ -109,7 +109,7 @@ body {
     position: absolute;
     top: 30%;
     transform: translateY(-40%);
-    text-align: center;
+    text-align: left;
     padding-left: 5%;
     padding-right: 5%;
 }
