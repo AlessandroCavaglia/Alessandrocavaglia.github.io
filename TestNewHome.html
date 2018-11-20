@@ -39,10 +39,9 @@
 </nav>
 <div class="container-fluid" style="padding: 0px;">
     <div class="col-xs-12 div1">
-        <div class="div1Text">
-            <h1 class="div1BigText">Hi i'm Alessandro Cavaglià</h1>
-            <h1 class="div1NormalText">Computer scientist, Developer, Nerd</h1>
-        </div>
+
+            <h1 class="div1BigText">Hi i'm Alessandro Cavaglià Computer Scientist, Developer, <c class="Animationc">Nerd.</c></h1>
+
         <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 186 1900 113" id="BigSVG" style="display: none">
             <polygon fill="white" points="0,300 542.167,210.5 1212.5,300 1920,198.5 1920,300"  ></polygon>
         </svg>
@@ -60,7 +59,7 @@
 </html>
 
 <script>
-    if (window.innerWidth<=800)
+    if (window.innerWidth<=800 || window.innerHeight<=500)
     {
         $('#BigSVG').hide();
     }
@@ -69,7 +68,7 @@
         $('#BigSVG').removeAttr("style");
     }
     window.onresize = function(event) {
-        if (window.innerWidth<=800)
+        if (window.innerWidth<=800 || window.innerHeight<=500)
         {
             $('#BigSVG').hide();
         }

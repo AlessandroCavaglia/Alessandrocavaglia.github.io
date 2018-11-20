@@ -20,13 +20,16 @@
 .navbar-right{
     margin-right: 10%;
 }
-@media screen and (max-width: 765px){
+@media screen and (max-width: 765px), screen and (max-height : 500px){
     .navbar-right{
         margin-right: 0;
         margin-bottom: 0;
     }
     .navbar-li{
         margin:0 !important;
+    }
+    .navbar-a{
+        padding: 0 !important;
     }
 }
 .icon-bar {
@@ -92,25 +95,35 @@ body {
 
 
 .div1 {
-    position: relative;
-    background-image: linear-gradient(#191a1d, #191a1d);
+    background-image: url("/IMG/Astro.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
     height: 85vh;
     padding: 0;
-}
-.div1Text{
-    text-align: center;
-    padding-top: 15%;
+    position: relative
 }
 .div1BigText
 {
     color:#fff;
     font-size: 75px;
+    position: absolute;
+    top: 40%;
+    transform: translateY(-40%);
+    text-align: center;
+    padding-left: 5%;
+    padding-right: 5%;
 }
-.div1NormalText{
-    color:#fff;
-    font-size: 45px;
+.Animationc
+{
+    border-right: 3px solid;
+    animation: blink-caret .8s step-end infinite;
 }
-@media screen and (max-width: 765px){
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: white }
+}
+
+@media screen and (max-width: 765px), screen and (max-height : 500px){
     .div1{
         box-shadow: 0 4px 30px -2px gray;
     }
