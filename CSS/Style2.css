@@ -64,7 +64,7 @@
 .navbar-a:after{
     content: '';
     position: absolute;
-    border-bottom: 2px solid #000;
+    border-bottom: 2px solid #90A4AE;
     bottom: 0;
     left: 0;
     right: 100%;
@@ -93,14 +93,15 @@ body {
 /*End of the navbar style*/
 
 
-
+/*Div1 style*/
 .div1 {
-    background-image: url("/IMG/test4.jpg");
+    background-image: url("https://alessandrocavaglia.github.io/IMG/test4.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    height: 85vh;
+    height: calc(100vh - 70px);
     padding: 0;
-    position: relative
+    position: relative;
+    background-position: center;
 }
 .div1BigText
 {
@@ -115,14 +116,61 @@ body {
 }
 .Animationc
 {
-    border-right: 3px solid;
+    border-right: 3px solid ;
     animation: blink-caret .8s step-end infinite;
 }
 @keyframes blink-caret {
     from, to { border-color: transparent }
     50% { border-color: white }
 }
+/*End of Div1 style*/
 
+/*Div2 style*/
+.div2{
+    padding-bottom: 3%;
+}
+.AboutMe{
+    padding-top: 3%;
+    padding-left: 3%;
+    font-size: 11vw;
+}
+.Mystory{
+    font-size: 3vw;
+}
+.Myself{
+    width: 30vw;
+    border: solid 3px;
+    border-radius: 50%;
+    float: left;
+    margin-right: 2%;
+    margin-bottom: 1%;
+}
+/*End of Div2 style*/
+
+/*Div3 style*/
+.div3{
+    height: 80vh;
+    background-color: black;
+    box-shadow: 0 4px 30px 2px grey;
+}
+.Div3t{
+    display: flex;
+    align-items: center;
+}
+.Div3tcolumn{
+    padding-left: 1%;
+    padding-right: 1%;
+    text-align: center;
+}
+.MySkills{
+    padding-top: 3%;
+    padding-left: 3%;
+    font-size: 9vw;
+}
+/*End of Div3 style*/
+
+
+/*Mobile Phone */
 @media screen and (max-width: 765px), screen and (max-height : 500px){
     .div1{
         box-shadow: 0 4px 30px -2px gray;
@@ -133,11 +181,37 @@ body {
     .div1NormalText{
         font-size: 30px;
     }
+    .AboutMe{
+        font-size: 15vw;
+    }
+    .Myself{
+        width: 45vw;
+    }
+    .Mystory{
+       font-size:7vw;
+    }
+    .Div3t{
+        display: inline-block;
+    }
+    .MySkills{
+        font-size:7vw;
+    }
 }
-
+/*Col md */
+@media (max-width: 1200px) {
+    .Div3t{
+        display: inline-block;
+    }
+    .MySkills{
+        text-align: center;
+    }
+}
 svg {
     position: absolute;
     bottom: 0;
     width: 100%;
     height: 10vw;
+}
+.colored{
+    color:#90A4AE;
 }
