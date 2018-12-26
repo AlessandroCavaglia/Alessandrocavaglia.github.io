@@ -167,6 +167,13 @@ body {
     padding-left: 3%;
     font-size: 9vw;
 }
+.Icon{
+    color: white;
+}
+.Icon:hover{
+    color:#90A4AE;
+    cursor: pointer;
+}
 /*End of Div3 style*/
 
 
@@ -200,7 +207,7 @@ body {
 /*Col md */
 @media (max-width: 1200px) {
     .Div3t{
-        display: inline-block;
+        display: inherit;
     }
     .MySkills{
         text-align: center;
