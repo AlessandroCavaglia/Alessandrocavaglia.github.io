@@ -1,5 +1,40 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
+<!--
+       ,
+       \`-._           __
+        \\  `-..____,.'  `.
+         :`.         /    \`.
+         :  )       :      : \
+          ;'        '   ;  |  :
+          )..      .. .:.`.;  :
+         /::...  .:::...   ` ;
+         ; _ '    __        /:\
+         `:o>   /\o_>      ;:. `.
+        `-`.__ ;   __..--- /:.   \
+        === \_/   ;=====_.':.     ;
+         ,/'`--'...`--....        ;
+              ;                    ;
+            .'                      ;
+          .'                        ;
+        .'     ..     ,      .       ;
+       :       ::..  /      ;::.     |
+      /      `.;::.  |       ;:..    ;
+     :         |:.   :       ;:.    ;
+     :         ::     ;:..   |.    ;
+      :       :;      :::....|     |
+      /\     ,/ \      ;:::::;     ;
+    .:. \:..|    :     ; '.--|     ;
+   ::.  :''  `-.,,;     ;'   ;     ;
+.-'. _.'\      / `;      \,__:      \
+`---'    `----'   ;      /    \,.,,,/
+                   `----`             
+                                                                  
+                    _____   ____  ______  _  __                   
+  ______   ______  /     \_/ __ \/  _ \ \/ \/ /  ______   ______  
+ /_____/  /_____/ |  Y Y  \  ___(  <_> )     /  /_____/  /_____/  
+                  |__|_|  /\___  >____/ \/\_/                     
+                        \/     \/                                 -->
 <head>
     <link rel="icon" href="IMG/Logo.png">
     <link rel="stylesheet" href="JS/Bootstrap/css/bootstrap.css">
@@ -61,25 +96,64 @@
                 <h1 class="MySkills colored"><b style="color: #fff;">M</b>y <b style="color: #fff;">S</b>kills </h1>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-7 container" >
-                <div class="col-xs-2 Div3tcolumn">
-                    <h2 class="Icon">Web</h2>
-                    <h2 class="Icon"><i class="fas fa-globe"></i></h2>
+                <div class="col-xs-2 Div3tcolumn Icon_Active" onclick="Change('#web')" id="web">
+                    <h2>Web</h2>
+                    <h2><i class="fas fa-globe"></i></h2>
                 </div>
-                <div class="col-xs-3 Div3tcolumn">
-                    <h2 class="Icon">Developing</h2>
-                    <h2 class="Icon"><i class="fas fa-code"></i></h2>
+                <div class="col-xs-3 Div3tcolumn Icon" onclick="Change('#dev')" id="dev">
+                    <h2>Developing</h2>
+                    <h2><i class="fas fa-code"></i></h2>
                 </div>
-                <div class="col-xs-4 Div3tcolumn">
-                    <h2 class="Icon">Networking</h2>
-                    <h2 class="Icon"><i class="fas fa-code-branch"></i></h2>
+                <div class="col-xs-4 Div3tcolumn Icon" onclick="Change('#net')" id="net">
+                    <h2>Networking</h2>
+                    <h2><i class="fas fa-code-branch"></i></h2>
                 </div>
-                <div class="col-xs-3 Div3tcolumn">
-                    <h2 class="Icon">General</h2>
-                    <h2 class="Icon"><i class="fas fa-clipboard"></i></h2>
+                <div class="col-xs-3 Div3tcolumn Icon" onclick="Change('#gen')" id="gen">
+                    <h2>General</h2>
+                    <h2><i class="fas fa-clipboard"></i></h2>
                 </div>
             </div>
         </div>
-
+        <div class="col-xs-12 text-center Active1" id="web1">
+            <h1 class="Skill" id="s1">-HTML <i class="fab fa-html5"></i></h1>
+            <h1 class="Skill" id="s2">-CSS <i class="fab fa-css3-alt"></i></h1>
+            <h1 class="Skill" id="s3">-Javascript <i class="fab fa-js"></i></h1>
+            <h1 class="Skill" id="s4">-PHP <i class="fab fa-php"></i></h1>
+            <h1 class="Skill" id="s5">-Java servelt, JSP <i class="fab fa-java"></i></h1>
+            <h1 class="Skill" id="s6">-Frameworks:</h1>
+            <h1 class="Skill" id="s7">-Bootstrap</h1>
+            <h1 class="Skill" id="s8">-Jquery</h1>
+        </div>
+        <div class="col-xs-12 text-center" style="display: none" id="dev1">
+            <h1 class="Skill" >-HTML <i class="fab fa-html5"></i></h1>
+            <h1 class="Skill" >-CSS <i class="fab fa-css3-alt"></i></h1>
+            <h1 class="Skill">-Javascript <i class="fab fa-js"></i></h1>
+            <h1 class="Skill" >-PHP <i class="fab fa-php"></i></h1>
+            <h1 class="Skill">-Java servelt, JSP <i class="fab fa-java"></i></h1>
+            <h1 class="Skill" >-Frameworks:</h1>
+            <h1 class="Skill" >-Bootstrap</h1>
+            <h1 class="Skill">-Jquery</h1>
+        </div>
+        <div class="col-xs-12 text-center" style="display: none" id="net1">
+            <h1 class="Skill" >-HTML <i class="fab fa-html5"></i></h1>
+            <h1 class="Skill" >-CSS <i class="fab fa-css3-alt"></i></h1>
+            <h1 class="Skill">-Javascript <i class="fab fa-js"></i></h1>
+            <h1 class="Skill" >-PHP <i class="fab fa-php"></i></h1>
+            <h1 class="Skill">-Java servelt, JSP <i class="fab fa-java"></i></h1>
+            <h1 class="Skill" >-Frameworks:</h1>
+            <h1 class="Skill" >-Bootstrap</h1>
+            <h1 class="Skill">-Jquery</h1>
+        </div>
+        <div class="col-xs-12 text-center" style="display: none" id="gen1">
+            <h1 class="Skill" >-HTML <i class="fab fa-html5"></i></h1>
+            <h1 class="Skill" >-CSS <i class="fab fa-css3-alt"></i></h1>
+            <h1 class="Skill">-Javascript <i class="fab fa-js"></i></h1>
+            <h1 class="Skill" >-PHP <i class="fab fa-php"></i></h1>
+            <h1 class="Skill">-Java servelt, JSP <i class="fab fa-java"></i></h1>
+            <h1 class="Skill" >-Frameworks:</h1>
+            <h1 class="Skill" >-Bootstrap</h1>
+            <h1 class="Skill">-Jquery</h1>
+        </div>
     </div>
 </div>
 </body>
@@ -104,4 +178,18 @@
             $('#BigSVG').removeAttr("style");
         }
     };
+    function Change(id) {
+        if(!$(id).hasClass("Icon_Active"))
+        {
+            $('div.Icon_Active').addClass("Icon");
+            $('div.Icon_Active').removeClass("Icon_Active");
+            $(id).removeClass("Icon");
+            $(id).addClass("Icon_Active");
+            $('div.Active1').toggle();
+            $('div.Active1').removeClass("Active1");
+            $(id+'1').fadeToggle();
+            $(id+'1').addClass("Active1");
+        }
+    }
+
 </script>
