@@ -149,8 +149,11 @@ body {
 
 /*Div3 style*/
 .div3{
-    height: 80vh;
-    background-color: black;
+   /* height: 80vh; */
+    background-image:url("../IMG/starry-night-871287410454UmtH.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     box-shadow: 0 4px 30px 2px grey;
 }
 .Div3t{
@@ -161,6 +164,8 @@ body {
     padding-left: 1%;
     padding-right: 1%;
     text-align: center;
+    border-bottom: solid 1px;
+    padding-bottom: 1vh;
 }
 .MySkills{
     padding-top: 3%;
@@ -180,7 +185,48 @@ body {
 .Skill{
     color: #ffffff;
 }
+.Skillc{
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+}
 /*End of Div3 style*/
+
+/*Start of Div4 style*/
+.Div4{
+    background-color: white;
+    box-shadow: inset 0 4px 30px -7px grey;
+    padding-bottom: 10%;
+}
+.Portfolio{
+    padding-top: 3%;
+    padding-left: 3%;
+    font-size: 11vw;
+}
+.Website{
+    background-size: cover;
+    background-position: center;
+    height: 35vh;
+    border-radius: 25px;
+    margin-top: 6%;
+    border: solid 1px #90A4AE;
+    padding: 1%;
+}
+#Elena{
+    background-image: url("../IMG/Elenaesimo.jpg");
+}
+#Sfondi{
+    background-image: url("../IMG/Glisfondi.jpg");
+}
+#Astimec{
+    background-image: url("../IMG/Astimec.jpg");
+}
+#Tigliole{
+    background-image: url("../IMG/Tigliole.jpg");
+}
+
+
+/*End of Div4 style*/
 
 
 /*Mobile Phone */
@@ -207,7 +253,16 @@ body {
         display: inline-block;
     }
     .MySkills{
-        font-size:7vw;
+        font-size:16vw;
+    }
+    .Iconc{
+        font-size: 7vw;
+    }
+    .Skill {
+        font-size: 8vw;
+    }
+    .Portfolio{
+        font-size: 15vw;
     }
 }
 /*Col md */
