@@ -204,16 +204,13 @@ body {
     font-size: 11vw;
 }
 .Website{
-    background-size: cover;
-    background-position: center;
-    height: 35vh;
-    border-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
     margin-top: 6%;
-    border: solid 1px #90A4AE;
-    padding: 1%;
+    width: 100%;
 }
 #Elena{
-    background-image: url("../IMG/Elenaesimo.jpg");
+    background-image: url("../IMG/Elenaesimo2.jpg");
 }
 #Sfondi{
     background-image: url("../IMG/Glisfondi.jpg");
