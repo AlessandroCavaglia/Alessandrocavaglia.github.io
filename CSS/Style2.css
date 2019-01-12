@@ -256,7 +256,7 @@ body {
     width: 100%;
     color: #fff;
     text-align: center;
-    height: 10vh;
+    min-height: 10vh;
     display: flex;
     align-items: center;
 }
