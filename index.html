@@ -63,10 +63,9 @@
         </div>
         <div class="collapse navbar-collapse" id="navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
-                <li class="navbar-li"><a href="#" class="navbar-a"><b>Bio</b></a></li>
-                <li class="navbar-li"><a href="#" class="navbar-a"><b>Skills</b></a></li>
-                <li class="navbar-li"><a href="#" class="navbar-a"><b>Portfolio</b></a></li>
-                <li class="navbar-li"><a href="#" class="navbar-a"><b>Contacts</b></a></li>
+                <li class="navbar-li"><a href="#" class="navbar-a" id="Bio"><b>Bio</b></a></li>
+                <li class="navbar-li"><a href="#" class="navbar-a" id="Skills"><b>Skills</b></a></li>
+                <li class="navbar-li"><a href="#" class="navbar-a" id="Port"><b>Portfolio</b></a></li>
             </ul>
         </div>
     </div>
@@ -82,7 +81,7 @@
             <polygon fill="white" points="0,300 542.167,210.5 1212.5,300 1920,198.5 1920,300"  ></polygon>
         </svg>
     </div>
-    <div class="col-xs-12 div2 container">
+    <div class="col-xs-12 div2 container" id="Biot">
         <h1 class="AboutMe"><b class="colored">A</b>bout <b class="colored">M</b>e</h1>
         <img src="CSS/me.png" class="Myself">
         <h1 class="Mystory">I was born in 1999 in Turin,Italy.
@@ -90,9 +89,9 @@
             I'm attending the University of Computer Science to improve my knowledge and study Artificial Intelligence.
             I enjoy making websites and developing programs that can make life simpler because i think this is the real progress' aim.</h1>
     </div>
-    <div class="col-xs-12 div3 container">
+    <div class="col-xs-12 div3 container" id="Skillst">
         <div class="container-fluid Div3t">
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-5">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-5" >
                 <h1 class="MySkills colored"><b style="color: #fff;">M</b>y <b style="color: #fff;">S</b>kills </h1>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-7 container" >
@@ -156,7 +155,7 @@
             </div>
         </div>
     </div>
-    <div class="col-xs-12 container Div4">
+    <div class="col-xs-12 container Div4" id="portt">
         <h1 class="Portfolio"><b class="colored">M</b>y <b class="colored">P</b>ortfolio</h1>
         <div class="col-xs-offset-0 col-xs-12 col-sm-offset-0 col-sm-6 col-lg-offset-1 col-lg-5 " >
             <div class="Website-Container" id="Elena">
@@ -239,5 +238,24 @@
             $(id+'1').addClass("Active1");
         }
     }
+    $('#Bio').on('click', function(event) {
+        var target=$('#Biot');
+        $('html, body').stop().animate({
+            scrollTop: target.offset().top-70
+        }, 1000);
+    });
+    $('#Skills').on('click', function(event) {
+        var target=$('#Skillst');
+        $('html, body').stop().animate({
+            scrollTop: target.offset().top-70
+        }, 1000);
+    });
+    $('#Port').on('click', function(event) {
+        var target=$('#portt');
+        $('html, body').stop().animate({
+            scrollTop: target.offset().top-70
+        }, 1000);
+    });
+
 
 </script>
